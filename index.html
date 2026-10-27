@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tattoos By Steve — Grand Falls, NB | Steve Levesque, 20+ Years Tattooing</title>
+<meta name="description" content="Tattoos By Steve, 263 Blvd Broadway, Grand Falls NB. Artist Steve Levesque: 20+ years, custom tattoos and flash, single-use needles. Call (506) 582-0224.">
+<style>
+:root{--acc:#c8102e;--acctx:#fff;--ink:#e8e4da;--bg:#121212}
+*{box-sizing:border-box}body{margin:0;font-family:'Arial Narrow',Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+.layout{display:grid;grid-template-columns:250px 1fr;min-height:100vh}@media(max-width:720px){.layout{grid-template-columns:1fr}}
+.rail{background:#000;border-right:4px solid #c8102e;padding:2rem 1.2rem;position:sticky;top:0;height:100vh}@media(max-width:720px){.rail{position:static;height:auto}}
+.rail h1{font-size:2rem;line-height:1.05;text-transform:uppercase;letter-spacing:.05em;margin:.4rem 0}
+.rail .red{color:#c8102e}
+.rail a{color:#e8e4da}
+main{padding:2rem;max-width:760px}
+h2{text-transform:uppercase;letter-spacing:.12em;border-bottom:2px solid #c8102e;padding-bottom:.3rem}
+.big{font-size:1.25rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.8rem;margin:1rem 0}
+.stats div{background:#1d1d1d;border:1px solid #333;padding:.9rem;text-align:center}
+.stats strong{display:block;font-size:1.7rem;color:#c8102e}
+.cta{display:inline-block;background:#c8102e;color:#fff;padding:.7rem 1.2rem;text-decoration:none;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.foot{padding:1rem 2rem;font-size:.85rem;opacity:.7}
+.cform input,.cform select,.cform textarea{background:#1d1d1d;color:#e8e4da;border-color:#444}
+
+.cform{display:grid;gap:.7rem;max-width:520px}
+.cform label{display:grid;gap:.3rem;font-size:.92rem;font-weight:600}
+.cform input,.cform select,.cform textarea{padding:.6rem .7rem;border:1px solid #0003;border-radius:8px;font:inherit;background:#fff;color:#111}
+.cform button{padding:.75rem 1rem;border:0;border-radius:8px;font:inherit;font-weight:700;cursor:pointer;background:var(--acc);color:var(--acctx,#fff)}
+.fnote{font-size:.85rem;opacity:.8}
+.fdone{font-weight:700}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+
+<div class="layout">
+  <aside class="rail">
+    <p class="red" style="font-weight:700;letter-spacing:.2em">GRAND FALLS · NB</p>
+    <h1>Tattoos<br>By <span class="red">Steve</span></h1>
+    <p>Steve Levesque — tattoo artist</p>
+    <p><a class="cta" href="tel:+15065820224">(506) 582-0224</a></p>
+    <p>263 Blvd Broadway<br>Grand Falls, NB E3Z 2K1</p>
+    <p><a href="https://www.facebook.com/Tattoos-by-Steve-217298938321132/">Tattoos by Steve on Facebook</a></p>
+    <p>Rated 4.8★ · 120 Google reviews</p>
+  </aside>
+  <main>
+    <h2>20+ years behind the machine</h2>
+    <p class="big">Steve Levesque has been tattooing for over 20 years — more than a decade of it right here in Grand Falls. Thousands of ready-to-go flash designs in the shop, or bring your idea and get a true custom piece.</p>
+    <div class="stats">
+      <div><strong>20+</strong>years tattooing</div>
+      <div><strong>10+</strong>years in Grand Falls</div>
+      <div><strong>100%</strong>single-use needles &amp; tubes</div>
+      <div><strong>4.8★</strong>120 Google reviews</div>
+    </div>
+    <h2>Clean, every time</h2>
+    <p>Every needle and tube is single-use and opened in front of you. Custom work is drawn for your body and your idea — no photocopied tattoos.</p>
+    <h2>Hours</h2>
+    <p>Tuesday – Thursday: <strong>11 a.m. – 4 p.m.</strong><br>Friday – Saturday: <strong>11 a.m. – 8 p.m.</strong><br>Sunday – Monday: closed</p>
+    <h2>Book a consult</h2>
+    
+      <form class="cform" onsubmit="event.preventDefault();var r='TBS-'+Math.floor(1000+Math.random()*9000);document.getElementById('TBSref').textContent=r;document.getElementById('TBSdone').style.display='block';this.querySelector('button').disabled=true;">
+        <label>Your name<input type="text" required autocomplete="name"></label>
+        <label>Phone<input type="tel" required autocomplete="tel"></label>
+        <label>Service<select>
+          <option>Tattoo consultation</option>
+          <option>Custom design inquiry</option>
+          <option>Piercing inquiry</option>
+          <option>General question</option>
+        </select></label>
+        <label>Details (optional)<textarea rows="3"></textarea></label>
+        <button type="submit">Send request</button>
+        <p class="fnote">Concept preview form — it doesn't send or store anything yet. To reach us today, please call (506) 582-0224.</p>
+        <p class="fdone" id="TBSdone" style="display:none">Reference: <strong id="TBSref"></strong> — concept only; please call to confirm.</p>
+      </form>
+  </main>
+</div>
+<footer class="foot"><p>Concept website designed for Tattoos By Steve · Built by Jake Hersky — Ottawa web designer · hersky.info</p></footer>
+
+</body>
+</html>
